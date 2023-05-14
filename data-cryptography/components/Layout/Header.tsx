@@ -16,16 +16,16 @@ function Header() {
   return (
     <>
       <Head>
-        <title>Crypto-App</title>
-        <meta name="description" content="Developed by Daniel Mesfin" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>DataCrypt</title>
+        <meta name="description" content="Developed by AAiT Students" />
+        <link rel="icon" href="./favicon.ico" />
       </Head>
       {session ? (
         <div className="flex pl-5 justify-between shadow-sm border-b py-1">
-          <div className="font-bold text-3xl text-red-600">DataCrypto</div>
+          <div className="font-bold text-3xl text-red-600">DataCrypt</div>
           <div className="flex font-semibold p-1 mx-2 text-sm text-red-600">
             <Link
-              href={"https://github.com/danmesfin/data-crypto-AES-TDES-OTP"}
+              href={"https://github.com/SalasDelil/Data-Cipher"}
               className="mx-2 hover:text-red-600"
             >
               Github
@@ -43,7 +43,7 @@ function Header() {
               </div>
               <button
                 onClick={() => signOut()}
-                className="w-24 mx-2 rounded-md bg-red-600 hover:bg-red-700 text-white"
+                className="w-24 mx-2 rounded-xl bg-red-600 hover:bg-red-700 text-white"
               >
                 Logout
               </button>
