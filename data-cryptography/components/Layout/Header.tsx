@@ -43,7 +43,7 @@ function Header() {
               </div>
               <button
                 onClick={() => signOut()}
-                className="w-24 mx-2 rounded-xl bg-red-600 hover:bg-red-700 text-white"
+                className="w-24 mx-2 rounded-xl bg-red-600 hover:bg-blue-600 text-white"
               >
                 Logout
               </button>
