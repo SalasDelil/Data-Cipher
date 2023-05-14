@@ -5,9 +5,9 @@ function Footer() {
     <footer className="flex h-12 justify-center bg-red-800">
       <a
         className="font-semibold text-gray-100"
-        href="https://github.com/danmesfin"
+        href="https://github.com/SalasDelil"
       >
-        Daniel Mesfin
+        GitHub
       </a>
     </footer>
   );
