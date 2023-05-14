@@ -70,9 +70,11 @@ export default function Crypto() {
               Encryption
             </div>
             <div className="flex flex-col mt-2">
-              <label className="p-1 mx-2">Text</label>
+              <label className="p-1 mx-2">PlainText</label>
               <textarea
                 type="text"
+                rows={3}
+                placeholder="Enter a plaintext"
                 className="ml-3 w-3/4 border focus:border-blue-500 rounded-lg"
                 onChange={(event) => handleInputChange(event)}
                 value={text}
@@ -83,7 +85,7 @@ export default function Crypto() {
               <input
                 type="text"
                 name="key"
-                placeholder=" ..."
+                placeholder="Enter a key"
                 value={key}
                 onChange={(event) => setKey(event.target.value)}
                 className="w-3/4 ml-3 rounded-lg"
@@ -123,9 +125,11 @@ export default function Crypto() {
               Decryption
             </div>
             <div className="flex flex-col mt-2">
-              <label className="w-1/4 mt-1 mx-2">Text</label>
+              <label className="w-1/4 mt-1 mx-2">CipherText</label>
               <textarea
                 type="text"
+                rows={3}
+                placeholder="Enter a ciphertext"
                 className="h-12 w-3/4 mx-2 mt-1 border focus:border-blue-500 rounded-lg"
                 value={encTextInput}
                 onChange={(event) => setEncTextInput(event.target.value)}
@@ -136,7 +140,7 @@ export default function Crypto() {
               <input
                 type="text"
                 name="decr_key"
-                placeholder=" ..."
+                placeholder="Enter a key"
                 value={decKey}
                 onChange={(event) => setDecKey(event.target.value)}
                 className="w-3/4 mx-2 rounded-lg"
@@ -152,6 +156,7 @@ export default function Crypto() {
                 className="ml-3 rounded-lg w-24"
                 onChange={(event) => setDecryptionAlgorithm(event.target.value)}
               >
+                <option value="">Select an algorithm</option>
                 <option value="AES">AES</option>
                 <option value="TripleDES">3DES</option>
                 <option value="OTP">OTP</option>

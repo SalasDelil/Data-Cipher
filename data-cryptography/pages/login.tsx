@@ -24,7 +24,7 @@ function Login() {
             Please Sign-in to continue!
           </div>
           <button
-            className="w-24 m-2 text-white bg-red-700 hover:bg-red-600 rounded-xl"
+            className="w-24 m-2 text-white bg-red-700 hover:bg-red-600 rounded-xl shadow"
             onClick={() => signIn()}
           >
             Sign in
