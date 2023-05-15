@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cryptography</title>
+<meta lang="en">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="encryption.css">
+<script src="encrypt.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="top">
+        
+        <div class="nexttop"><!--the first classified class for the h1 and h2-->
+            <div class="h1f"><!--inside nexttop class for h1-->
+              <h1>My Webpage</h1>
+            </div>
+            <div class="h2f"><!--inside nexttpp class for h2-->
+       <h2><b>Encryption</b></h2>
+            </div>
+        </div>
+
+    
+    <!--Start of first page for encryption-->
+    <div class="firtPage">
+
+        <!--for message taking part-->
+    <div class="takingMessage1">
+        <div class="message1"><!--for message text edition it is inside taking message1 class-->
+      <label for="message" >Message</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        </div>
+        <div class="textarea1"><!--for textarea edition it is inside taking message1 class-->
+   <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+        </div>
+    </div>
+
+ <!--for key taking part-->
+    <div class="key"><!--start of key section-->
+        <div class="keytext">
+ <label for="text-field">Key</label>
+        </div>
+        <div class="keytextfield">
+ <input type="text" id="text-field" name="text-field"><br><br>
+        </div>
+    </div>
+<!--end of key section-->
+
+<!--start of dropdown section-->
+    <div class="drop">
+
+ <label for="dropdown">Choose Algorithm:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="DES">DES</option>
+        <option value="3DES">3DES</option>
+        <option value="AES">AES</option>
+      </select><br><br>
+    </div>
+    <!--end of dropdown section-->
+
+
+ <!--start of button section-->
+ <div class="button1">
+    <button type="button" onclick="encryptMessage()">Encrypt</button>
+
+</div>
+<!--end of button section-->
+
+
+<!--start of encryption message section-->
+<div class="message">
+    <div class="h1">
+<label for="text-field">Encrypted Message</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</div>
+<div class="textarea">
+    <textarea id="encrypted-message" name="encrypted-message" rows="5" cols="40"></textarea><br><br>
+</div>
+
+</div>
+<!--end of encryption message section-->
+
+
+</div> <!--end of first page for encryption-->
+<div class="next">
+<a href="decryption.html">Next</a>
+</div>
+
+<div class="back">
+    <a href="Intro.html">Back</a>
+    </div>
+
+</div>
+    
+</body>
+
+
+<script src="encrypt.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aes-js/3.1.2/index.min.js"></script>
+
+</html>
