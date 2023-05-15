@@ -1,0 +1,118 @@
+/* CSS code for Decryption page */
+body {
+    background-color:  #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling for Decryption section */
+  .dic {
+    margin-bottom: 20px;
+  }
+  
+  .h2 {
+    
+    text-align: center;
+    color: wheat;
+  }
+  
+  .text {
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-left: 30px;
+    color: wheat;
+  }
+  
+  
+  
+  .textarea textarea {
+    width: 65%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Styling for Key section */
+  .key2 {
+    margin-bottom: 20px;
+    
+    
+  }
+  
+  .tect {
+    display: inline-block;
+    margin-right: 20px;
+    color: wheat;
+  }
+  
+  .tfield {
+    display: inline-block;
+    width: 30%;
+  }
+
+  .tfield input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .button2 button {
+    margin-bottom: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+   
+  }
+  
+  .button2 button:hover {
+    background-color: #8e3e7d;
+
+  }
+  
+  /* Styling for Decrypted message section */
+  .textD {
+    margin-bottom: 50px;
+  }
+  
+  .dText {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    margin-right: 20px;
+    color: wheat;
+  }
+  
+  .textArea textarea {
+    width: 65%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .back a{
+    margin-bottom: 20px;
+background-color: hsl(315, 6%, 86%);
+color:blue;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+      }
+      
+    .back a:hover {
+        background-color:goldenrod;
+    
+      }
+  .drop{
+color: wheat;
+
+
+  }
+  
