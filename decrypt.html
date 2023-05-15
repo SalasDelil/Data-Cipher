@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Decryption</title>
+    <link rel="stylesheet" href="decrypt.css">
+
+</head>
+<body>
+
+    <div class="secondPage">
+        <!--start of Decryption section-->
+                <div class="dic">
+                    <div class="h2">
+        <h2><b>Decryption</b></h2>
+                    </div>
+                    <div class="text">
+        <label for="text-field"> Paste Encrypted Message Here </label>
+                    </div>
+                    <div class="textarea">
+        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        </div>
+                </div>
+        <!--end of decryption section-->
+        <!--star of key-->
+        <div class="key2">
+            <div class="tect">
+        <label for="text-field">Key</label>
+        </div>
+        <div class="tfield">
+        <input type="text" id="text-field" name="text-field">
+        </div>
+        </div>
+        <!--end of key-->
+
+
+        <div class="drop">
+
+            <label for="dropdown">Choose Algorithm:</label>
+                 <select id="dropdown" name="dropdown">
+                   <option value="DES">DES</option>
+                   <option value="3DES">3DES</option>
+                   <option value="AES">AES</option>
+                 </select><br><br>
+               </div>
+               <!--end of dropdown section-->
+
+
+
+        
+    
+        
+              <!--start of button-->
+              <div class="button2">
+        <button type="button">Decrypt</button>
+        </div>
+        <!--end of button-->
+        
+        <!--start of text field decryption-->
+        <div class="textD">
+            <div class="dText">
+        <label for="text-field">Decrypted Message</label>
+        </div>
+        <div class="textArea">
+        <textarea id="message" name="message" rows="5" cols="40"></textarea>
+        </div>
+        </div>
+        <!--end of text field decryption-->
+        <div class="back">
+            <a href="encrypt.html">Back</a>
+            </div>
+        
+            </div>
+
+            <script src="decrypt.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+
+	
+</body>
+</html>
