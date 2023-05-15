@@ -1,0 +1,184 @@
+/* CSS code for encryption.html */
+
+/* Styling for top section */
+.top {
+    background-color: #333;
+    color: wheat;
+    padding: 15px;
+    }
+    
+    /* Styling for h1 and h2 */
+    .nexttop {
+        margin-bottom: 20px;
+   
+    }
+    
+    .h1f {
+        
+        width: 50%;
+        margin: 0 auto;
+        color: greenyellow;
+        margin-bottom: 10px;
+        margin-left: 300px;
+        
+
+    }
+    
+    .h2f {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 100px;
+        
+
+    }
+    
+    /* Styling for first page of encryption */
+    .firtPage {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    }
+    
+    /* Styling for message input section */
+    .takingMessage1 {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .message1 {
+    margin-bottom: 10px;
+    }
+    
+    .textarea1 {
+    margin-bottom: 20px;
+    }
+    
+    /* Styling for key input section */
+    .key {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .keytext {
+    margin-bottom: 10px;
+    }
+    
+    .keytextfield {
+    margin-bottom: 20px;
+    }
+    
+    /* Styling for dropdown section */
+    .drop {
+    margin-bottom: 10px;
+    }
+    
+    /* Styling for encrypt button */
+    .button1 button {
+        margin-bottom: 10px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+       
+      }
+      
+      .button1 button:hover {
+        background-color: #8e3e7d;
+    
+      }
+    
+    /* Styling for encrypted message section */
+    .message {
+    
+    margin-top: 10px;
+    }
+    
+    .h1 {
+    color: wheat;
+    }
+    
+    .textarea {
+    margin-bottom: 20px;
+    }
+    
+    .button {
+    text-align: center;
+    }
+    
+    /* Styling for Next link */
+    .next {
+    text-align: center;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    }
+    
+    /* Styling for body and page background */
+    body {
+    background-color: #f2f2f2;
+    }
+    
+    /* Styling for labels */
+    label {
+    font-weight: bold;
+    font-size: 16px;
+    }
+    
+    /* Styling for text inputs */
+    input[type=text] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #333;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    }
+    
+    /* Styling for textareas */
+    textarea {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #333;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    }
+    
+    .next a{
+        margin-bottom: 20px;
+    background-color: hsl(315, 6%, 86%);
+    color: blue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+          }
+          
+        .next a:hover {
+            background-color:goldenrod;
+        
+          }
+          .back a{
+            margin-bottom: 20px;
+        background-color: hsl(315, 6%, 86%);
+        color:blue;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+              }
+              
+            .back a:hover {
+                background-color:goldenrod;
+            
+              }
+    
