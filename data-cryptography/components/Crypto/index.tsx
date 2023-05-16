@@ -59,14 +59,14 @@ export default function Crypto() {
   };
 
   return (
-    <div className="flex flex-col mx-0 bg-gray-100">
+    <div className="flex flex-col mx-auto bg-blue-100">
       <main className="flex flex-col md:px-36">
         <div className="flex flex-wrap md:flex-nowrap justify-center text-semibold my-10  ">
           <div
-            className="w-full md:w-1/2 flex flex-col justify-center mx-2 mt-5 p-3
-           bg-gray-300 border border-gray-300 shadow"
+            className="w-full md:w-1/2 flex flex-col justify-center mx-2 mt-5 p-4
+           bg-gray-400 border rounded-lg border-gray-300 shadow"
           >
-            <div className="my-2 text-2xl text-red-900 font-mono font-bold">
+            <div className="my-2 text-3xl  font-mono text-red-900 font-bold">
               Encryption
             </div>
             <div className="flex flex-col mt-2">
@@ -75,7 +75,7 @@ export default function Crypto() {
                 type="text"
                 rows={3}
                 placeholder="Enter a plaintext"
-                className="ml-3 w-3/4 border focus:border-blue-500 rounded-lg"
+                className="ml-3 w-1/1 border focus:border-blue-500 rounded-lg"
                 onChange={(event) => handleInputChange(event)}
                 value={text}
               />
@@ -88,17 +88,18 @@ export default function Crypto() {
                 placeholder="Enter a key"
                 value={key}
                 onChange={(event) => setKey(event.target.value)}
-                className="w-3/4 ml-3 rounded-lg"
+                className="w-1/1 ml-3 rounded-lg"
               />
             </div>
             <div className="flex flex-col mt-2">
-              <label className="ml-2 p-1">Algorithm</label>
+              <label className="mx-2 p-1">Algorithm</label>
               <select
                 id="Algo"
                 name="Algo"
-                className="rounded-lg ml-3 w-24"
+                className="rounded-lg ml-3 w-1/1"
                 onChange={(event) => setAlgorithm(event.target.value)}
               >
+                <option value="">Select encipher algo</option>
                 <option value="AES">AES</option>
                 <option value="TripleDES">TripleDES</option>
                 <option value="OTP">OTP</option>
@@ -118,19 +119,19 @@ export default function Crypto() {
           </div>
 
           <div
-            className="w-full md:w-1/2 flex flex-col justify-center mx-2 mt-5 p-3 border
-           rounded-lg border-gray-300 bg-gray-300"
+            className="w-full md:w-1/2 flex flex-col justify-center mx-2 mt-5 p-4
+            bg-gray-400 border rounded-lg border-gray-300 shadow"
           >
-            <div className="my-2 text-2xl text-red-900 font-mono font-bold">
+            <div className="my-2 text-3xl  font-mono text-red-900 font-bold">
               Decryption
             </div>
             <div className="flex flex-col mt-2">
-              <label className="w-1/4 mt-1 mx-2">CipherText</label>
+            <label className="p-1 mx-2">CipherText</label>
               <textarea
                 type="text"
                 rows={3}
                 placeholder="Enter a ciphertext"
-                className="h-12 w-3/4 mx-2 mt-1 border focus:border-blue-500 rounded-lg"
+                className="ml-3 w-1/1 border focus:border-blue-500 rounded-lg"
                 value={encTextInput}
                 onChange={(event) => setEncTextInput(event.target.value)}
               />
@@ -143,7 +144,7 @@ export default function Crypto() {
                 placeholder="Enter a key"
                 value={decKey}
                 onChange={(event) => setDecKey(event.target.value)}
-                className="w-3/4 mx-2 rounded-lg"
+                className="w-1/1 ml-3 rounded-lg"
               />
             </div>
             <div className="flex flex-col mt-2">
@@ -153,10 +154,10 @@ export default function Crypto() {
               <select
                 id="Algo"
                 name="Algo"
-                className="ml-3 rounded-lg w-24"
+                className="ml-3 rounded-lg w-1/1"
                 onChange={(event) => setDecryptionAlgorithm(event.target.value)}
               >
-                <option value="">Select an algorithm</option>
+                <option value="">Select decipher algo</option>
                 <option value="AES">AES</option>
                 <option value="TripleDES">3DES</option>
                 <option value="OTP">OTP</option>
