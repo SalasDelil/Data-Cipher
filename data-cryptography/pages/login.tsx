@@ -14,21 +14,26 @@ function Login() {
   } else {
     return (
       <div className="flex mx-auto justify-center h-screen">
-        <div className="w-1/2 bg-blue-700 justify-center">
-          <div className="pl-10 text-7xl text-white mt-40 mx-auto font-extrabold">
-            Welcome to DataCipher!
+        <div className="w-1/2 flex justify-center items-center bg-blue-700 border rounded-md h-screen">
+          <div className="text-center">
+            <div className="pl-5 text-4xl md:text-7xl text-white font-extrabold">
+              Welcome to DataCipher!
+            </div>
           </div>
         </div>
         <div className="w-1/2 flex flex-col justify-center border rounded-md mx-auto px-4 py-5 shadow">
-          <div className="text-xl font-bold mt-2">
-            Please Sign-in to continue!
+          <div className="text-center">
+            <div className="text-xl font-bold mt-2">
+              Please Sign-in to continue!
+            </div>
+            <button
+              className="w-24 m-3 text-white bg-blue-700 hover:bg-blue-500 rounded-xl"
+              onClick={() => signIn()}
+              >
+                Sign in
+            </button>
           </div>
-          <button
-            className="w-24 m-2 text-white bg-red-700 hover:bg-red-600 rounded-xl shadow"
-            onClick={() => signIn()}
-          >
-            Sign in
-          </button>
+          
         </div>
       </div>
     );
