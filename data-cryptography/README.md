@@ -16,9 +16,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, Clone the repository:
 
 ```git clone https://github.com/SalasDelil/Data-Cipher/edit/master/data-cryptography <YOUR PROJECT NAME>```
+
 cd YOUR PROJECT NAME and run:
 
 ```npm install```
+
 then, run the development server:
 
 ```bash
