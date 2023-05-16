@@ -60,12 +60,18 @@ export default function Crypto() {
 
   return (
     <div className="flex flex-col mx-auto rounded-lg bg-gradient-to-b from-blue-200 to-gray-400">
+      <div className="bg-light text-white">
+          <div className="text-center">
+            <h1 className="my-3 text-3xl text-blue-900 font-bold font-mono">Welcome to Encryption and Decryption Tool</h1>
+            <p className="text-gray-600 font-mono">A web-based tool to encrypt and decrypt your sensitive messages using the latest encryption algorithms.</p>
+          </div>
+        </div>
       <main className="flex flex-col md:px-36">
         <div className="flex flex-wrap md:flex-nowrap justify-center text-semibold my-10">
           <div
             className="w-full md:w-1/2 flex flex-col justify-center mx-2 mt-5 p-4 bg-gradient-to-b from-gray-400 to-gray-900 border rounded-lg border-gray-300 shadow"
           >
-            <div className="my-2 text-3xl  font-mono text-red-900 font-bold">
+            <div className="my-2 text-3xl font-mono text-red-900 font-bold">
               Encryption
             </div>
             <div className="flex flex-col mt-2">
