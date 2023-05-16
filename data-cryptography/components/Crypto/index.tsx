@@ -59,12 +59,11 @@ export default function Crypto() {
   };
 
   return (
-    <div className="flex flex-col mx-auto bg-blue-100">
+    <div className="flex flex-col mx-auto rounded-lg bg-gradient-to-b from-blue-200 to-gray-400">
       <main className="flex flex-col md:px-36">
-        <div className="flex flex-wrap md:flex-nowrap justify-center text-semibold my-10  ">
+        <div className="flex flex-wrap md:flex-nowrap justify-center text-semibold my-10">
           <div
-            className="w-full md:w-1/2 flex flex-col justify-center mx-2 mt-5 p-4
-           bg-gray-400 border rounded-lg border-gray-300 shadow"
+            className="w-full md:w-1/2 flex flex-col justify-center mx-2 mt-5 p-4 bg-gradient-to-b from-gray-400 to-gray-900 border rounded-lg border-gray-300 shadow"
           >
             <div className="my-2 text-3xl  font-mono text-red-900 font-bold">
               Encryption
@@ -75,7 +74,7 @@ export default function Crypto() {
                 type="text"
                 rows={3}
                 placeholder="Enter a plaintext"
-                className="ml-3 w-1/1 border focus:border-blue-500 rounded-lg"
+                className="ml-3 p-1 w-1/1 border focus:border-blue-500 rounded-lg"
                 onChange={(event) => handleInputChange(event)}
                 value={text}
               />
@@ -88,7 +87,7 @@ export default function Crypto() {
                 placeholder="Enter a key"
                 value={key}
                 onChange={(event) => setKey(event.target.value)}
-                className="w-1/1 ml-3 rounded-lg"
+                className="w-1/1 ml-3 p-1 rounded-lg"
               />
             </div>
             <div className="flex flex-col mt-2">
@@ -96,10 +95,10 @@ export default function Crypto() {
               <select
                 id="Algo"
                 name="Algo"
-                className="rounded-lg ml-3 w-1/1"
+                className="rounded-lg ml-3 p-1 w-1/1"
                 onChange={(event) => setAlgorithm(event.target.value)}
               >
-                <option value="">Select encipher algo</option>
+                <option value="">Select encipher Algorithm</option>
                 <option value="AES">AES</option>
                 <option value="TripleDES">TripleDES</option>
                 <option value="OTP">OTP</option>
@@ -112,15 +111,14 @@ export default function Crypto() {
               Encrypt
             </button>
             <textarea
-              className="font-semibold text-xl w-3/4 mx-auto mt-5 bg-gray-50 p-2 rounded-lg"
+              className="text-xl w-4/5 mx-auto mt-5 bg-gray-50 p-2 rounded-lg"
               value={encrypted}
               readOnly="true"
             />
           </div>
 
           <div
-            className="w-full md:w-1/2 flex flex-col justify-center mx-2 mt-5 p-4
-            bg-gray-400 border rounded-lg border-gray-300 shadow"
+            className="w-full md:w-1/2 flex flex-col justify-center mx-2 mt-5 p-4 bg-gradient-to-b from-gray-400 to-gray-900 border rounded-lg border-gray-300 shadow"
           >
             <div className="my-2 text-3xl  font-mono text-red-900 font-bold">
               Decryption
@@ -131,7 +129,7 @@ export default function Crypto() {
                 type="text"
                 rows={3}
                 placeholder="Enter a ciphertext"
-                className="ml-3 w-1/1 border focus:border-blue-500 rounded-lg"
+                className="ml-3 p-1 w-1/1 border focus:border-blue-500 rounded-lg"
                 value={encTextInput}
                 onChange={(event) => setEncTextInput(event.target.value)}
               />
@@ -144,7 +142,7 @@ export default function Crypto() {
                 placeholder="Enter a key"
                 value={decKey}
                 onChange={(event) => setDecKey(event.target.value)}
-                className="w-1/1 ml-3 rounded-lg"
+                className="w-1/1 ml-3 p-1 rounded-lg"
               />
             </div>
             <div className="flex flex-col mt-2">
@@ -154,12 +152,12 @@ export default function Crypto() {
               <select
                 id="Algo"
                 name="Algo"
-                className="ml-3 rounded-lg w-1/1"
+                className="ml-3 p-1 rounded-lg w-1/1"
                 onChange={(event) => setDecryptionAlgorithm(event.target.value)}
               >
-                <option value="">Select decipher algo</option>
+                <option value="">Select decipher Algorithm</option>
                 <option value="AES">AES</option>
-                <option value="TripleDES">3DES</option>
+                <option value="TripleDES">TripleDES</option>
                 <option value="OTP">OTP</option>
               </select>
             </div>
@@ -171,13 +169,13 @@ export default function Crypto() {
             </button>
 
             <textarea
-              className="font-semibold text-xl w-3/4 mx-auto mt-5 p-2 bg-gray-100 rounded-lg"
+              className="text-xl w-4/5 mx-auto mt-5 p-2 bg-gray-100 rounded-lg"
               value={decryptedText}
               readOnly={true}
             />
           </div>
         </div>
-        <div className="rounded-lg py-2 my-2 mx-5 px-3 bg-gray-200">
+        <div className="rounded-lg py-2 my-2 mx-5 px-3 bg-gray-300">
           <p className="font-semibold text-sm">
             Note: for OTP enc-dec, the length of message and key has to be the
             same. for Eg. text = ABcdefG, key = lmnopqr
