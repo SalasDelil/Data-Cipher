@@ -18,7 +18,7 @@ function Header() {
       <Head>
         <title>DataCipher</title>
         <meta name="description" content="Developed by AAiT Students" />
-        <link rel="icon" href="./favicon.ico" />
+        <link rel="icon" href="./favicon1.ico" />
       </Head>
       {session ? (
         <div className="flex pl-5 justify-between bg-white shadow-md border-b rounded-lg py-1">
