@@ -25,7 +25,7 @@ function Header() {
           <div className="font-bold text-3xl text-blue-700">DataCipher</div>
           <div className="flex font-semibold p-1 mx-2 text-sm text-blue-700">
             <Link
-              href={"https://github.com/SalasDelil/Data-Cipher"}
+              href={"https://github.com/SalasDelil/Data-Cipher/tree/master/data-cryptography"}
               className="mx-2 hover:text-blue-600"
             >
               Github
