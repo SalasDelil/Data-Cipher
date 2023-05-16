@@ -21,7 +21,7 @@ function Header() {
         <link rel="icon" href="./favicon.ico" />
       </Head>
       {session ? (
-        <div className="flex pl-5 justify-between shadow-sm border-b py-1">
+        <div className="flex pl-5 justify-between bg-white shadow-md border-b rounded-lg py-1">
           <div className="font-bold text-3xl text-blue-700">DataCipher</div>
           <div className="flex font-semibold p-1 mx-2 text-sm text-blue-700">
             <Link
