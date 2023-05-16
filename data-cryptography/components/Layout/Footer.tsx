@@ -7,7 +7,7 @@ function Footer() {
       <p className="font-normal text-white">For more info:</p>
       <a
         className="font-semibold text-gray-100"
-        href="https://github.com/SalasDelil"
+        href="https://github.com/SalasDelil/Data-Cipher/tree/master/data-cryptography"
       >
         GitHub
       </a>
