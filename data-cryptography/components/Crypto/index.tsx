@@ -173,7 +173,6 @@ export default function Crypto() {
             >
               Decrypt
             </button>
-
             <textarea
               className="text-xl w-4/5 mx-auto mt-5 p-2 bg-gray-100 rounded-lg"
               value={decryptedText}
